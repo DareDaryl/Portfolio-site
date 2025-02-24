@@ -49,9 +49,28 @@ body, html {
   display: block;
 }
 
-#w3-top:hover {
-  visibility: visible;
+/* Navbar */
+/* Navbar: Always visible */
+#w3-top {
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 9999; /* Ensure it's always on top */
+  background-color: #333; /* Solid background color */
 }
+
+/* No need for visibility rules on hover */
+.w3-bar {
+  background-color: #333; /* Solid background color */
+  box-shadow: 0 4px 2px -2px gray; /* Optional: Adding a shadow for depth */
+}
+
+/* Remove the animation and visibility logic */
+.w3-bar.w3-card.w3-animate-top {
+  visibility: visible; /* Ensure the navbar is always visible */
+  box-shadow: none; /* Remove any unnecessary box shadow */
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -167,33 +186,33 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="./assets/D_Mexico.JPG" style="width:100%"; onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="./assets/Website.PNG" style="width:100%"; onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/Family.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      <img src="./assets/RPG.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/flannel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      <img src="./assets/Magazine.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/IMG_7344 (1).JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      <img src="./assets/mp3.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="./assets/DSlogo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="./assets/Calories.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/flannel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <img src="./assets/Nutrition.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/flannel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      <img src="./assets/flexbox.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="w3-col m3">
