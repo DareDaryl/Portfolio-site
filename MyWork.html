@@ -73,13 +73,28 @@ body, html {
 /* Set the size of each grid item */
 .w3-col.m3 {
   padding: 8px; /* Add some padding between the grid items */
+  
 }
 
 .w3-col.m3 img {
   width: 100%; /* Make the image take up the full width of the container */
   height: 200px; /* Set a fixed height to make all images the same size */
-  object-fit: cover; /* Ensure the image covers the area, without distortion */
-  border-radius: 8px; /* Optional: Add rounded corners to the images */
+  /*object-fit: cover; /* Ensure the image covers the area, without distortion */
+  object-fit: contain; /* Ensure the image covers the area, without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners to the images*/
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+.w3-col.m3 a:hover {
+  color: #f39c12;  /* Bright hover effect */
+  text-decoration: underline;
+}
+.w3-row-padding {
+  margin-bottom: 16px; /* Space between the rows */
+}
+
+.w3-col.m3 {
+  padding: 10px;  /* Add some padding around each image */
 }
 
 /* Turn off parallax scrolling for tablets and phones 
@@ -130,7 +145,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love coding!</em></p>
-  <p>I love coding! I never knew I would and had always been to afraid to learn it. I had thought the world of software engineering was available only to the geniuses and intellectual titans of the world. That the complexities of code would be too much for the average person to comprehend. One of the things that I've come to realize throughout my career and personal life, is that EVERYTHING is accessible if you give it enough time, attention and training. I had reached a stalemate in my career as an Operations Manager and really wanted something that would challenge the creative part of my brain. While I was going through this work existential crisis, I started googling classes for engineering and ended up reading about some very comprehensive and fun Software Bootcamps. I spent a month curating the one that would work best for me and ended up doing a 6 month long, 40 hours a week full stack coding course. I haven't looked back. </p>
+  <p>I love coding! I never knew I would and had always been to afraid to learn it. I had thought the world of software engineering was available only to the geniuses and intellectual titans of the world. I had believed that the complexities of code would be too much for the average person to comprehend. One of the things that I've come to realize throughout my career and personal life, is that EVERYTHING is accessible if you give it enough time, attention and training. I had reached a stalemate in my career as an Operations Manager and really wanted something that would challenge the creative part of my brain. While I was going through this existential career crisis, I started googling classes for engineering and ended up reading about some very comprehensive and fun Software Bootcamps. I spent a month curating the one that would work best for me and ended up doing a 6 month long, 40 hours a week full stack coding course. I haven't looked back. </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Daryl Shifflett</b></p><br>
@@ -139,7 +154,7 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. There's something about the writing of code that I find pure and fulfilling. Seeing scripts and text turn into applications and websites feels almost mystical. The fact that you can bring into existence something that is merely a thought, excites me in a way I can't describe. 
+      <p>Welcome to my website. There's something about the writing of code that I find pure and fulfilling. Seeing scripts and text turn into applications feels almost mystical. The fact that you can bring into existence something that is merely a thought, excites me in a way I can't describe. 
         While I search for a job in this field, I continue to code on the side and find ways to exercise and practice it. 
         
         I created this website to showcase my portfolio and to let you know a little bit about myself. Please see the projects below for a glimpse into my work. </p>
@@ -195,22 +210,22 @@ body, html {
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <img src="./assets/Website.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Personal Website">
-      <a href="https://github.com/DareDaryl/Personal-website-" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/Personal-website-" target="_blank">Personal Website</a>
     </div>
 
     <div class="w3-col m3">
       <img src="./assets/RPG.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple Role Playing Game">
-      <a href="https://github.com/DareDaryl/RPG-simple" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/RPG-simple" target="_blank">Role Playing Game</a>
     </div>
     
     <div class="w3-col m3">
       <img src="./assets/Magazine.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Magazine Homepage">
-      <a href="https://github.com/DareDaryl/Magazine-Homepage" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/Magazine-Homepage" target="_blank">Magazine Homepage</a>
     </div>
 
     <div class="w3-col m3">
       <img src="./assets/mp3.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MP3 Music Player">
-      <a href="https://github.com/DareDaryl/Music-player" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/Music-player" target="_blank">MP3 Music Player</a>
     </div>
 
   </div>
@@ -218,12 +233,12 @@ body, html {
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="./assets/Calories.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Calorie Counter">
-      <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">Calorie Counting App</a>
     </div>
 
     <div class="w3-col m3">
       <img src="./assets/Nutrition.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nutrition Label">
-      <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">View Project</a>
+      <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">Nutrition Labels</a>
     </div>
 
     <div class="w3-col m3">
