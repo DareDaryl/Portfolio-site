@@ -1,0 +1,96 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./assets/waterfall.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./assets/waimea-falls.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./assets/Family_beach.jpeg");
+  min-height: 400px;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+#w3-top {
+  visibility: hidden;
+  display: block;
+}
+
+/* Navbar */
+/* Navbar: Always visible */
+#w3-top {
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  z-index: 9999; /* Ensure it's always on top */
+  background-color: #333; /* Solid background color */
+}
+
+/* No need for visibility rules on hover */
+.w3-bar {
+  background-color: #333; /* Solid background color */
+  box-shadow: 0 4px 2px -2px gray; /* Optional: Adding a shadow for depth */
+}
+
+/* Remove the animation and visibility logic */
+.w3-bar.w3-card.w3-animate-top {
+  visibility: visible; /* Ensure the navbar is always visible */
+  box-shadow: none; /* Remove any unnecessary box shadow */
+}
+/* Set the size of each grid item */
+.w3-col.m3 {
+  padding: 8px; /* Add some padding between the grid items */
+  
+}
+
+.w3-col.m3 img {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: 200px; /* Set a fixed height to make all images the same size */
+  /*object-fit: cover; /* Ensure the image covers the area, without distortion */
+  object-fit: cover; /* Ensure the image covers the area, without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners to the images*/
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+.w3-col.m3 a:hover {
+  color: #f39c12;  /* Bright hover effect */
+  text-decoration: underline;
+}
+.w3-row-padding {
+  margin-bottom: 16px; /* Space between the rows */
+}
+
+.w3-col.m3 {
+  padding: 10px;  /* Add some padding around each image */
+}
+
+/* Turn off parallax scrolling for tablets and phones 
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}*/
