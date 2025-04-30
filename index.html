@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>My Portfolio Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -44,6 +45,7 @@
   </div>
 </div>
 
+
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
@@ -64,7 +66,7 @@
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">My three favorite languages are:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>HTML and CSS</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>HTML / CSS</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
   </div>
@@ -107,17 +109,18 @@
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest projects<br> Click on the images to make them bigger</em></p><br>
+  <p class="w3-center"><em>Here are some of my latest projects<br> Click on the images to make them bigger. Click on the links below them to access the code</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="./assets/Website.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Personal Website">
-      <a href="https://github.com/DareDaryl/Personal-website-" target="_blank">Personal Website</a>
+      <img src="./assets/Blogcapture-4.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A blog site that utilizes jquery, js, sass and scss. Used JS to play page animations on page load and 
+      enables or disables parallax features based on device. Added paginations to rotate between pages.">
+      <a href="https://github.com/DareDaryl/Daryl-s-Blog-/tree/main" target="_blank">A Blog Website </a>
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/RPG.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple Role Playing Game">
+      <img src="./assets/rpgbats-small.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple, interactive game using arrays, strings, objects, fucntions, loops, if/else statements ane more">
       <a href="https://github.com/DareDaryl/RPG-simple" target="_blank">Role Playing Game</a>
     </div>
     
@@ -127,7 +130,7 @@
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/gymjams.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MP3 Music Player">
+      <img src="./assets/mp3update.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MP3 Music Player: Using string and array methods like find(), foreach(), map() and join(). It handles audio playback, manages playlists, implements play, pause, next, previous and shuffle functionalities.">
       <a href="https://github.com/DareDaryl/Music-player" target="_blank">MP3 Music Player</a>
     </div>
 
@@ -135,18 +138,18 @@
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="./assets/Calories.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Calorie Counter">
+      <img src="./assets/Calories.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Form validation. This validates user input, perform calculations based on that input and dynamically updates the interface to display results. ">
       <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">Calorie Counting App</a>
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/Nutrition.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nutrition Label">
-      <a href="https://github.com/DareDaryl/Calorie-Counter" target="_blank">Nutrition Labels</a>
+      <img src="./assets/registration.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple registration form that collects information from people who visit your webpage.">
+      <a href="https://github.com/DareDaryl/Registration-Form" target="_blank">Registration Form</a>
     </div>
 
     <div class="w3-col m3">
-      <img src="./assets/flexbox.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cats">
-      <a href="https://github.com/DareDaryl/Flexboxe" target="_blank">Flexbox Photo Gallery</a>
+      <img src="./assets/cafemenu.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A fun menu showcasing basic HTML and CSS">
+      <a href="https://github.com/DareDaryl/Cafe-Menu" target="_blank">Cafe Menu</a>
     </div>
 
     <div class="w3-col m3">
@@ -185,32 +188,41 @@
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
       <!-- Embed the map with the given address -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6711.091711841827!2d-117.05436162372226!3d32.75124778530149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d956c6235bdc8d%3A0x995e6725a3873aaf!2s4021%20Aragon%20Dr%2C%20San%20Diego%2C%20CA%2092115!5e0!3m2!1sen!2sus!4v1740435301443!5m2!1sen!2sus" 
-              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6711.091711841827!2d-117.118489!3d32.9127459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9500a5b300f63%3A0x6ef3b0bcd1ffb221!2s8525%20Redwood%20Creek%20Ln%2C%20San%20Diego%2C%20CA%2092126!5e0!3m2!1sen!2sus!4v1742295019519!5m2!1sen!2sus" 
+  width="100%" 
+  height="300" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 4021 Aragon Dr, San Diego, CA 92115<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 8525 Redwood Creek Lane, San Diego, CA 92126<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 619-464-9695<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: darylshifflett@gmail.com<br>
       </div>
       <p>Currently accepting freelance projects&nbsp;<i class="fa fa-coffee"></i>, Feel free to leave your request below:</p>
       <p>What can I build or create for you?</p>
 
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+   <form action="https://formspree.io/f/mqappypb" method="POST" id="contact-form">
+  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    <div class="w3-half">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    </div>
+    <div class="w3-half">
+      <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+    </div>
+  </div>
+  <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+  <button class="w3-button w3-black w3-right w3-section" type="submit">
+    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+  </button>
+</form>
+
     </div>
   </div>
 </div>
@@ -223,7 +235,7 @@
     <a href="https://www.instagram.com/dare.daryl/" target="_blank" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
     <a href="https://github.com/DareDaryl" target="_blank" class="w3-hover-opacity"><i class="fa fa-github"></i></a>
     <a href="https://kr.pinterest.com/darylshifflett/" target="_blank" class="w3-hover-opacity"><i class="fa fa-pinterest-p"></i></a>
-    <a href="https://twitter.com/yourusername" target="_blank" class="w3-hover-opacity"><i class="fa fa-twitter"></i></a>
+    <a href="https://twitter.com/DarylShifflett" target="_blank" class="w3-hover-opacity"><i class="fa fa-twitter"></i></a>
     <a href="https://www.linkedin.com/in/daryl-shifflett-168a4331/" target="_blank" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
   </div>
 </footer>
@@ -257,7 +269,9 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+    
 }
+
 </script>
 
 </body>
